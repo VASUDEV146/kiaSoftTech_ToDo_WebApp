@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #acefef; 
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+h1 {
+    text-align: center;
+    color: #ed621d;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ff9f43;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+    transform: translateX(4px);
+    background-color: #ff793f;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#taskInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #48dbfb;
+    font-size: 16px;
+    outline: none;
+    color: #48dbfb;
+}
+
+#addTaskBtn {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1dd1a1;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#addTaskBtn:hover {
+    background-color: #10ac84;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.deleteBtn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: auto;
+}
+
+.deleteBtn:hover {
+    background-color: #c0392b;
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: #d5dbdb;
+}
+/* ... (previous CSS code) ... */
+
+.container {
+    /* ... (previous container styles) ... */
+    transition: transform 0.3s;
+}
+
+.container.show {
+    transform: translateY(0);
+}
+
+.container.hide {
+    transform: translateY(-100%);
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ... (previous CSS code) ... */
+
+#addTaskBtn {
+    /* ... (previous addTaskBtn styles) ... */
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#addTaskBtn:hover {
+    background-color: #10ac84;
+    transform: scale(1.05);
+}
+
+.buttons {
+    /* ... (previous buttons styles) ... */
+    transition: opacity 0.2s;
+}
+
+.buttons:hover {
+    opacity: 0.8;
+}
